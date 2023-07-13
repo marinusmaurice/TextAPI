@@ -33,4 +33,18 @@ Easy enough to extend to add more functionality
   //should be
   //Current Node number : 2
   Console.WriteLine($"Current Node number : {textAPI.CellIndex}");
+  //Delete newline character
+  textAPI.Delete(1);
+  //should be
+  //bca
+  //as newline char was deleted
+  Console.WriteLine(textAPI.ToString());
+  //should be
+  //Current Line number : 0
+  //as a newline char was deleted
+  Console.WriteLine($"Current Line number : {textAPI.LineIndex}");
+  //should be
+  //Current Node number : 1
+  //as it moved to the next available node after deletion
+  Console.WriteLine($"Current Node number : {textAPI.CellIndex}");
 ```
