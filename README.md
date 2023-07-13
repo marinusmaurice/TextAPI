@@ -1,11 +1,11 @@
 # TextAPI
 A minimal text api which caters for lines
 
-Uses doubly linked list for item storage and traversal unlike other text api's which typically use arrays.
+Uses doubly linked list for item storage and traversal unlike other text api's which typically use arrays.  
 Insert at index are much faster than stringbuilder.  
-Exposes current line and cell number.  
+Exposes current line number and cell count.  
 Does lines differently in that a default newline character always exists as the first character but not exposed.  
-Can easily move between lines and jump to nodes (api for that is not publicly exposed)  
+Can easily move between lines and jump to nodes from lines (api for that is not publicly exposed)  
 
 Easy enough to extend to add more functionality
 
