@@ -20,13 +20,17 @@ Easy enough to extend to add more functionality
   //a
   Console.WriteLine(textAPI.ToString());
   Console.WriteLine("-----------");
-  textAPI.CellIndex = 1;
+  //move to newline 'character' index
+  textAPI.CellIndex = 1;  
   textAPI.AppendAfterCurrentNode("c");
   //should end up with
   //b
   //ca
   Console.WriteLine(textAPI.ToString());  
   //should be
-  //Line number : 1
-  Console.WriteLine($"Line number : {textAPI.LineIndex}");
+  //Current Line number : 1
+  Console.WriteLine($"Current Line number : {textAPI.LineIndex}");
+  //should be
+  //Current Node number : 2
+  Console.WriteLine($"Current Node number : {textAPI.CellIndex}");
 ```
