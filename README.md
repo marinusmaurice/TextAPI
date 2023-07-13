@@ -10,6 +10,7 @@ Can easily move between lines and jump to nodes (api for that is not publicly ex
 Easy enough to extend to add more functionality
 
 # Sample Code
+```
   TextAPI textAPI = new TextAPI();
   textAPI.AppendAfterCurrentNode("a");
   textAPI.AppendBeforeCurrentNode("b");
@@ -28,3 +29,4 @@ Easy enough to extend to add more functionality
   //should be
   //Line number : 1
   Console.WriteLine($"Line number : {textAPI.LineIndex}");
+```
